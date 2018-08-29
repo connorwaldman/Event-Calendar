@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+<h2>Please enter your username and password</h2>
+
+<form action="/LoginServlet">
+<table>
+<tr>
+	<td>Username</td> 
+	<td><input name="username" type="text" size="20"></td>
+	<td></td>  
+</tr>
+<tr>
+	<td>Password</td> 
+	<td><input name="password" type="password" size="20"></td>
+	<td></td>  
+</tr>
+<tr>
+	<td><input type="submit" value="Login" ></td> 
+</tr>
+</table>
+</form>
+
+<form action="/Lecture_09/LoginServlet" METHOD=GET>
+		<table cellspacing="4">
+			<tr>
+				<td>Enter your user name:</td>
+				<td><input name="user" type="text" size="20"></td>
+				<td style="color: red"><%=error_message%></td>
+			</tr>
+			<tr>
+				<td>Enter your password:</td>
+				<td><input name="pw" type="password" size="20"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Login"></td>
+				<td></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

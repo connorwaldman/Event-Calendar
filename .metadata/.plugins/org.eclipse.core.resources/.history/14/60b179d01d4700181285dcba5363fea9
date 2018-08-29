@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+
+h1 {
+	font-family: Arial;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+}
+
+td {
+	color: blue;
+}

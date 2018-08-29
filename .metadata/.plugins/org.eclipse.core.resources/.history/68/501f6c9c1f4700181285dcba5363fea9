@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+h1 {
+	font-family: Arial;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+	color: rgb(0, 102, 102);
+}
+
+td {
+	font-family: Arial, sans-serif;
+	color: blue;
+}
+
+input[type="submit"] {
+   font-family: Veranda;
+   background-color: rgb(102, 153, 153);
+}

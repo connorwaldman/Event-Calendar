@@ -1,0 +1,10 @@
+127.0.0.1 - - [17/Apr/2018:00:14:22 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:00:14:23 -0400] "GET /EventProject/SQLProcessor.jsp HTTP/1.1" 200 705
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:00:14:47 -0400] "POST /EventProject/SQLServlet HTTP/1.1" 200 -
+127.0.0.1 - - [17/Apr/2018:00:17:38 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:00:17:39 -0400] "GET /EventProject/SQLProcessor.jsp HTTP/1.1" 200 705
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:00:17:47 -0400] "POST /EventProject/SQLServlet HTTP/1.1" 200 -
+127.0.0.1 - - [17/Apr/2018:21:52:50 -0400] "GET / HTTP/1.1" 404 1073
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:21:52:52 -0400] "GET /EventProject/Users.jsp HTTP/1.1" 200 793
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:21:53:23 -0400] "GET /EventProject/InsertServlet?password=test HTTP/1.1" 200 509
+0:0:0:0:0:0:0:1 - - [17/Apr/2018:21:54:11 -0400] "GET /EventProject/LoginServlet?username=test&password=test HTTP/1.1" 200 623

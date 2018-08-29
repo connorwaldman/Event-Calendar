@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<title>Events Processor</title>
+<link rel="stylesheet" href="HomePage.css" type="text/css">
+</head>
+<body>
+	<c:if test="${sqlStatement != null}">
+		<c:set var="sqlStatement" value="" />
+	</c:if>
+	
+	<%
+	    String eventID = "?";
+	    String id = request.getParameter("id");
+	    if (id != null)
+	        eventID = id;
+	    Object fullid = request.getAttribute("id");
+	    if (fullid != null)
+	        eventID = fullid.toString();
+	%>
+	
+	<%
+	    String performerName = "?";
+	    String name = request.getParameter("name");
+	    if (name != null)
+	        performerName = name;
+	    Object fullname = request.getAttribute("name");
+	    if (fullname != null)
+	        performerName = fullname.toString();
+	%>
+
+	<h1>Manage Users</h1>
+
+	<p>
+		<b>What would you like to do?:</b><br>
+	</p>
+	
+	<form action="./EventsSQLServlet" method="post">
+		<select name="sqlStatement">
+		<option value = "SELECT * FROM EVENT">${sqlStatement} LIST</option>
+		<option value = "DELETE FROM EVENT WHERE EVENTID = '<%=id%>'">${sqlStatement} DELETE</option>
+		<option value = "INSERT INTO EVENT VALUES ('<%=id%>', '<%=name%>')">${sqlStatement} INSERT</option>
+		<option value = "UPDATE EVENT SET USERNAME = 'UpdatedUser' WHERE USERNAME = '<%=id%>'">${sqlStatement} UPDATE</option>
+		</select>
+		<br> <br> <input type="submit" value="Execute">
+	</form>
+	<p>
+		<b>Result:</b><br> ${sqlResult}
+	</p>
+	
+</body>
+</html>

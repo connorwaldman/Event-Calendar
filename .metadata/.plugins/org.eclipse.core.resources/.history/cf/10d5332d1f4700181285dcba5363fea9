@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+h1 {
+	font-family: Arial;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+	color: rgb(0, 102, 102);
+}
+
+thead {
+	font-family: Ubuntu;
+	color: rgb(0, 204, 102);
+}
+
+td {
+	font-family: Arial, sans-serif;
+	color: blue;
+}
